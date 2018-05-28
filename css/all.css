@@ -1,0 +1,17 @@
+/* 메인 푸드트럭 상세정보스타일 */
+section ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#row_padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.img_size {
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 70%;
+}
