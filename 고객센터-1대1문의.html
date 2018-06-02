@@ -120,10 +120,35 @@ textarea{
                                     </div>
                                 
                                 </div>
+                                <div class="row">
+                                  <button class="btn btn-default center-block" type="submit">제출하기</button>
+                                </div>
                         </form>
-                        <div class="row">
-                            <button class="btn btn-default center-block" type="submit">제출하기</button>
-                        </div>
+
+
+                        <!--1대1 문의 유효성 체크
+                        <script>
+                        var title=$("제목").val().trim();
+                        var content=$("내용").val().trim();
+
+                        function 이름 지정(){
+                        if(title.length==0||title==null){
+                          alert("제목을 입력하세요")
+                          $("제목").focus();
+                          return false;
+                        }
+                        
+                        if(content.length==0||content==null){
+                          alert("내용을 입력하세요");
+                          $("내용").focus();
+                           return false;
+                        }
+                          return true;
+                        }
+                        </script>
+                        -->
+
+
                     </div>
                    
                 </div>

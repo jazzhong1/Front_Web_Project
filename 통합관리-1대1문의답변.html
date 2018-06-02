@@ -115,20 +115,32 @@
                                 <hr>
                                
                                 <div class="form-group">
-                                   
-                                    <label for="" class="col-sm-3 control-label">답변 내용</label>
-                                    <div class="col-sm-6">
-                                            <textarea class="form-control" rows="13" style="resize: none;"></textarea>
+                                    <div class="row">
+                                        <label for="" class="col-sm-3 control-label">답변 내용</label>
+                                      <div class="col-sm-6">
+                                        <textarea class="form-control" rows="13" style="resize: none;"></textarea>
+                                      </div>
+                                      <div class="col-sm-3"></div>
                                     </div>
-                                    <div class="col-sm-3"></div>
-                                    
+                                    <br><br>
+                                    <div class="row">
+                                      <button type="submit" class="btn btn-default center-block">답변완료</button>
+                                    </div>
                                 </div>
+                                
+                                <!--답변내용 유효성 체크
+                                <script>
+                                  function(){
+                                    var content=$("내용").val().trim();
 
-                                
-                            <form>
-                                    <button type="submit" class="btn btn-default center-block">답변완료</button>
-                                
-                            </form>
+                                    if(content==null||content.length==0){
+                                      alert("내용을 입력하세요.");
+                                      $("내용").focus();
+                                      return false;
+                                    }
+                                  }
+                                </script>-->
+
                     </div>
                     
                     <form class="navbar-form navbar-center">
