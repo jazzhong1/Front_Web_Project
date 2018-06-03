@@ -387,7 +387,7 @@
                   </div>
 
                   <ul id='comment-main'>
-                    <li  class='level1'>
+                    <!-- <li  class='level1'>
                     <label for="content">아이디: &nbsp;쏴주기</label>
                     <form name="commentInsertForm">
                       <div class="input-group">
@@ -402,6 +402,283 @@
                       </div>
                     </form>
                     <div class="commentList"></div>
+
+                    </li> -->
+                    <li id='comment-modify-list'>
+                      <!--댓글보기-->
+                      <form>
+                        <!--form클래스 아이디부여-->
+                        <div clas='row'>
+                          <div class="col-xs-9">
+                            <div class="row">
+                              <div class="col-md-6 ">
+
+                                <span class='panel-2-body-font'>아이디:</span> <span class='span-right-padding'>jazhong11111111111</span>
+                                <!--아이디부여-->
+                              </div>
+                              <div class="col-md-6 date-padding">
+
+
+                                <span class='panel-2-body-font'>작성날짜:</span>
+                                <span>2012/12/11</span><br>
+                                <!--date 부여 -->
+                              </div>
+                            </div>
+
+                            <span class="rating">
+                            <label>
+
+                                    <span class="icon">★</span>
+                            </label>
+                            <label>
+
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+
+                            <label>
+
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+                            <label>
+
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+
+                            <label>
+
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                          </label>
+                            </span>
+                            <br>
+                            <div class="row">
+                              <div class="col-xs-12">
+
+                                <textarea class="form-control" id="content" name="content" placeholder="내용을 입력하세요." rows="2" cols="100" style="resize: none;"></textarea>
+
+
+
+                              </div>
+
+                            </div>
+
+
+
+                          </div>
+                          <div class='col-xs-3 col-md-3-body-center'>
+
+                            <img class='comment-check-img' src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap" width=100% height=100%><br>
+
+
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-xs-12 result-btn-positon">
+                            <hr>
+                          </div>
+
+                        </div>
+
+                      </form>
+
+                    </li>
+
+                    <li id='comment-modify-list'>
+                      <!--댓글수정-->
+                      <form>
+                        <!--form클래스 아이디부여-->
+                        <div clas='row'>
+                          <div class="col-xs-9">
+                            <div class="row">
+                              <div class="col-md-6 ">
+
+                                <span class='panel-2-body-font'>아이디: <%=쏴주기> </span>
+                                <!--아이디부여-->
+                              </div>
+                              <div class="col-md-6 date-padding">
+
+
+                                <span class='panel-2-body-font'>작성날짜:<%=쏴주기></span>
+                                <!--date 부여 -->
+                              </div>
+                            </div>
+
+                            <span class="rating">
+                            <label>
+
+                                    <span class="icon">★</span>
+                            </label>
+                            <label>
+
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+
+                            <label>
+
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+                            <label>
+
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+
+                            <label>
+
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                          </label>
+                            </span>
+                            <br>
+                            <div class="row">
+                              <div class="col-xs-12">
+
+                                  <textarea class="form-control" id="content" name="content" placeholder="내용을 입력하세요." rows="2" cols="100" style="resize: none;"></textarea>
+
+
+
+                              </div>
+
+                            </div>
+
+
+
+                          </div>
+                          <div class='col-xs-3 col-md-3-body-center'>
+
+                            <img class='comment-check-img' src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap" width=100% height=100%><br>
+
+
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-xs-12 result-btn-positon">
+
+                            <button id="modify-button" class='btn btn-success result-btn' type="button">수정</button>
+
+
+                            <hr>
+                          </div>
+
+                        </div>
+
+                      </form>
+
+                    </li>
+
+
+                    <!--댓글달기-->
+                    <li id='comment-list'>
+                      <form>
+                        <!--form클래스 아이디부여-->
+                        <div clas='row'>
+                          <div class="col-xs-9">
+                            <div class="row">
+                              <div class="col-md-6 ">
+
+                                <span class='panel-2-body-font'>아이디:</span> <span class='span-right-padding'>jazhong11111111111</span>
+                                <!--아이디부여-->
+                              </div>
+                              <div class="col-md-6 date-padding">
+
+
+                                <span class='panel-2-body-font'>작성날짜:</span>
+                                <span>2012/12/11</span><br>
+                                <!--아이디부여 -->
+                              </div>
+                            </div>
+
+                            <span class="rating">
+                            <label>
+                                    <input type="radio" name="stars" value="1" />
+                                    <span class="icon">★</span>
+                            </label>
+                            <label>
+                                    <input type="radio" name="stars" value="2" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+
+                            <label>
+                                    <input type="radio" name="stars" value="3" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+                            <label>
+                                    <input type="radio" name="stars" value="4" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                            </label>
+
+                            <label>
+                                    <input type="radio" name="stars" value="5" />
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                                    <span class="icon">★</span>
+                          </label>
+                            </span>
+                            <br>
+                            <div class="row">
+                              <div class="col-xs-12">
+
+                                <textarea class="form-control" id="content" name="content" placeholder="내용을 입력하세요." rows="2" cols="100" style="resize: none;"></textarea>
+
+
+
+                              </div>
+
+                            </div>
+
+
+
+                          </div>
+                          <div class='col-xs-3 col-md-3-body-center'>
+
+                            <img id='comment-check-img' src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap" width=100% height=100><br>
+
+                            <button class="btn-success replace">사진등록</button>
+                            <div class='test'>
+                              <input id='comment-input-img' type="file" value="사진등록" class="upload" accept="image/gif, image/jpeg, image/png" name='comment-img'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-xs-12 result-btn-positon">
+
+                            <button id="result-button" class='btn btn-success result-btn' type="submit">완료</button>
+
+                            <button id="reset-button" class='btn btn-success result-btn' type="reset">취소</button>
+                            <hr>
+                          </div>
+
+                        </div>
+
+                      </form>
 
                     </li>
 
@@ -488,11 +765,10 @@
 <script>
   $("#myonoffswitch").on('click', function(e) {
     e.preventDefault();
-  })
+  });
 
   //댓글
 
-  <script>
     var bno = '${detail.bno}'; //게시글 번호
 
     $('[name=commentInsertBtn]').click(function() { //댓글 등록 버튼 클릭시
