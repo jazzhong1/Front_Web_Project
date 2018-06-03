@@ -623,11 +623,11 @@
                   </ul>
                   </dvi>
                   <script>
-                    var fn_reply = $(".btn-reply").one('click', function(e) {
+                    var fn_reply = $(".btn-reply").on('click', function(e) {
 
                       // <% if(memberLoggedIn!=null) { %>
                       //화면에 출력될 답글 입력창 만들기
-                      var li = $("<li id='comment-reply'></li>"); //태그생성
+                      var li = $("<li class='comment-reply'></li>"); //태그생성
                       var html = "<div class='col-xs-12' align='right'>";
                       html += '<form action="#" method="post">';
                       html += "<input type='hidden' name='name부여' value='속성부여'/>";
@@ -647,8 +647,8 @@
                       return li;
                     });
 
-                    $(".btn-cancel").one('click', function(e) {
-                      $("#comment-reply").detach();
+                    $(".btn-cancel").on('click', function(e) {
+                      $(".comment-reply").detach();
                     });
 
                   </script>
