@@ -19,8 +19,8 @@
 
 
   <style>
-
     /*푸드트럭정보*/
+
     .table1 .foodinfor {
       width: 50%;
     }
@@ -50,7 +50,8 @@
       font-size: 15pt;
       font-weight: bold;
     }
-    #basic-input{
+
+    #basic-input {
       display: inline-block;
       width: 60%;
     }
@@ -72,50 +73,84 @@
     /*스위치*/
 
     .onoffswitch {
-    position: relative; width: 55px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitch-checkbox {
-    display: none;
-}
-.onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #999999; border-radius: 20px;
-}
-.onoffswitch-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 16px; padding: 0; line-height: 16px;
-    font-size: 10px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-    content: "ON";
-    padding-left: 12px;
-    background-color: green; color: #FFFFFF;
-}
-.onoffswitch-inner:after {
-    content: "OFF";
-    padding-right: 12px;
-    background-color: #EEEEEE; color: #999999;
-    text-align: right;
-}
-.onoffswitch-switch {
-    display: block; width: 13px; margin: 1.5px;
-    background: #FFFFFF;
-    position: absolute; top: 0; bottom: 0;
-    right: 35px;
-    border: 2px solid #999999; border-radius: 20px;
-    transition: all 0.3s ease-in 0s;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px;
-}
+      position: relative;
+      width: 55px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    .onoffswitch-checkbox {
+      display: none;
+    }
+
+    .onoffswitch-label {
+      display: block;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #999999;
+      border-radius: 20px;
+    }
+
+    .onoffswitch-inner {
+      display: block;
+      width: 200%;
+      margin-left: -100%;
+      transition: margin 0.3s ease-in 0s;
+    }
+
+    .onoffswitch-inner:before,
+    .onoffswitch-inner:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 16px;
+      padding: 0;
+      line-height: 16px;
+      font-size: 10px;
+      color: white;
+      font-family: Trebuchet, Arial, sans-serif;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    .onoffswitch-inner:before {
+      content: "ON";
+      padding-left: 12px;
+      background-color: green;
+      color: #FFFFFF;
+    }
+
+    .onoffswitch-inner:after {
+      content: "OFF";
+      padding-right: 12px;
+      background-color: #EEEEEE;
+      color: #999999;
+      text-align: right;
+    }
+
+    .onoffswitch-switch {
+      display: block;
+      width: 13px;
+      margin: 1.5px;
+      background: #FFFFFF;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 35px;
+      border: 2px solid #999999;
+      border-radius: 20px;
+      transition: all 0.3s ease-in 0s;
+    }
+
+    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+      margin-left: 0;
+    }
+
+    .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+      right: 0px;
+    }
+
     /*스위치*/
 
     /*별입력*/
@@ -231,9 +266,11 @@
     .view-menu {
       margin-bottom: 5px;
     }
-    .basic-btn{
+
+    .basic-btn {
       background: green;
     }
+
     .result-btn {
       width: 90px;
       border-radius: 3px;
@@ -249,29 +286,44 @@
 
     /*푸드트럭 메인사진파일 버튼으로올리기*/
 
+    /*대댓글*/
 
-  /*대댓글*/
-  #textarea-reply {
-     resize: none;
-     padding-bottom: 100px;
-  }
+    #textarea-reply {
+      resize: none;
+      padding-bottom: 100px;
+    }
+
+    .btn-reply,
+    .btn-cancel {
+      display: none;
+    }
+
+
+    li#comment-list:hover button.btn-reply {
+      display: inline;
+    }
+
+    li#comment-list:hover button.btn-cancel {
+      display: inline;
+    }
+
 
 
     /*작아졌을떄*/
 
     @media(max-width:1199px) {
       /*해상도가 작을 때 드랍다운 아이템에 마우스를 올렸을때*/
-      .menu-check-img{
-          width: 110%;
+      .menu-check-img {
+        width: 110%;
       }
-      .truck-img-replace{
+      .truck-img-replace {
         width: 84%;
       }
 
-      .menu-check-img{
-          width:120%;
+      .menu-check-img {
+        width: 120%;
       }
-      .menu-img-replace{
+      .menu-img-replace {
         width: 93%;
       }
 
@@ -284,17 +336,17 @@
         width: 100%;
         height: 20;
       }
-      .truck-img-replace{
+      .truck-img-replace {
         width: 96%;
       }
 
-      #truck-check-img{
+      #truck-check-img {
         height: 200px;
       }
-      .menu-check-img{
-          width: 110%;
+      .menu-check-img {
+        width: 110%;
       }
-      .menu-img-replace{
+      .menu-img-replace {
         width: 92%;
       }
 
@@ -312,13 +364,13 @@
         width: 94%;
         height: 20;
       }
-      .menu-img-replace{
+      .menu-img-replace {
         width: 90%;
       }
-      .menu-check-img{
-          width: 122%;
+      .menu-check-img {
+        width: 122%;
       }
-      #truck-check-img{
+      #truck-check-img {
         height: 200px;
       }
     }
@@ -440,7 +492,7 @@
 
                       <div class="col-md-2" align="center">
                         <br>
-                        <div class="onoffswitch" >
+                        <div class="onoffswitch">
                           <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
                           <label class="onoffswitch-label" for="myonoffswitch" align="left">
                               <span class="onoffswitch-inner"></span>
@@ -481,8 +533,8 @@
 
 
                 <div class="panel-body">
-                  <ul id='comment-main'>
-                    <li id='comment-list'>
+                  <ul id='comment-main' style=list-style:none;>
+                    <li id='comment-list' class="leve1">
                       <!--댓글보기-->
                       <form>
                         <!--form클래스 아이디부여-->
@@ -541,72 +593,66 @@
                             <div class="row">
                               <div class="col-xs-12">
                                 <pre class="view-comment">입력받은 댓글</pre>
-                                  <button id=" btn-reply" class="btn btn-success btn-reply basic-btn">답글</button>
+                                <button type="button" class="btn btn-success btn-reply basic-btn">답글</button>
+                                <button type="button" class="btn btn-success btn-cancel basic-btn">취소</button>
                               </div>
                             </div>
 
                           </div>
                           <div class='col-xs-3 col-md-3-body-center'>
-                              <img class='comment-check-img' src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap" width=90% height=100%><br>
+                            <img class='comment-check-img' src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap" width=90% height=100%><br>
                           </div>
                         </div>
                         <hr>
                       </form>
                     </li>
-                    <li id='comment-reply'>
+                    <!-- <li id='comment-reply'>
                       <form class="" action="#" method="post">
 
                         <div class="col-xs-12">
                           ↴<textarea id="textarea-reply" class="form-control textarea-reply" style="resize: none;"></textarea>
                           <div align="right">
 
-                            <button type="submit" class="btn btn-success basic-btn" name="comment-relpy" >작성</button>
+                            <button type="submit" class="btn btn-success basic-btn" name="comment-relpy">작성</button>
                           </div>
                         </div>
                       </form>
 
-                    </li>
+                    </li> -->
 
                   </ul>
                   </dvi>
                   <script>
-        $(".btn-reply").on('click',function(e){
-              // <% if(memberLoggedIn!=null) { %>
-                //화면에 출력될 답글 입력창 만들기
-                var tr=$("<li id='comment-reply'></li>");//태그생성
-                var html="<div class='col-xs-12'>";
-                html+='<form action="<%=%>/" method="post">';
-                html+="<input type='hidden' name='name부여' value='속성부여'/>";
-                html+="<input type='hidden' name='name부여' value='속성부여'/>";
-                html+="<input type='hidden' name='name부여' value='속성부여'/>";
-                html+="<input type='hidden' name='name부여' value='"+$(this).val()+"'/>";
-                html+=" ↴<textarea id='textarea-reply' class='form-control' style='resize: none;'></textarea>";
-                html+="<button type='submit' class='btn btn-success'>등록</button>";
-                html+="</form></di>";
-                //위에서 작성한 html구문을 tr변수 text노드에 삽입
-                tr.html(html);
-                //작성된 tr태그(객체)를 원본 html구문의
-                //(tr class=leve1)뒤에 삽입
-                tr.insertAfter($(this).parent().parent()).children("td").slideDown(100);
-                //이벤트가 1회만 발생하게 제한
-                $(this).off('click');
-                //답글달고 버튼을 누르면 해당 서블릿에 데이터전송
-                // tr.find('form').submit(function(e){
-                //     if(<%=memberLoggedIn==null%>)
-                //     {
-                //       fn_loginAlert();
-                //       e.preventDefault();
-                //     }
-                //     var len=$(this).children('textarea').val().trim().length;
-                //     if(len==0)
-                //     {
-                //       e.preventDefault();
-                //       tr.find('textarea').focus();
-                //     }
-                //   });
-                // <% } %>
-            });
-      </script>
+                    var fn_reply = $(".btn-reply").one('click', function(e) {
+
+                      // <% if(memberLoggedIn!=null) { %>
+                      //화면에 출력될 답글 입력창 만들기
+                      var li = $("<li id='comment-reply'></li>"); //태그생성
+                      var html = "<div class='col-xs-12' align='right'>";
+                      html += '<form action="#" method="post">';
+                      html += "<input type='hidden' name='name부여' value='속성부여'/>";
+                      html += "<input type='hidden' name='name부여' value='속성부여'/>";
+                      html += "<input type='hidden' name='name부여' value='속성부여'/>";
+                      html += "<input type='hidden' name='name부여' value='" + $(this).val() + "'/>";
+                      html += " ↴<textarea id='textarea-reply' class='form-control' style='resize: none;'></textarea>";
+                      html += "<button type='submit' class='btn btn-success'>등록</button>&nbsp;";
+                      html += "<button type='reset' class='btn btn-success'>취소</button>";
+                      html += "</form></div>";
+                      //위에서 작성한 html구문을li변수 text노드에 삽입
+                      li.html(html);
+                      //작성된 lir태그(객체)를 원본 html구문의
+                      //(li class=leve1)뒤에 삽입
+                      li.insertAfter($(this).parent().parent().parent().parent().parent().parent()).children("li").slideDown(500);
+
+                      return li;
+                    });
+
+                    $(".btn-cancel").one('click', function(e) {
+                      $("#comment-reply").detach();
+                    });
+
+                  </script>
+
                 </div>
 
               </div>
@@ -643,7 +689,6 @@
       </div>
     </div>
   </section>
-
 
 
 
@@ -732,8 +777,6 @@
       $('#truck-check-img').attr('src', "http://proxyprivat.com/images/noimage.jpeg");
     })
   })
-
-
 </script>
 
 
