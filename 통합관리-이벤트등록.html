@@ -9,6 +9,7 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/nav-tabs.css">
     <link rel="stylesheet" href="css/event.css">
     <link rel="stylesheet" href="css/footer.css">
   
@@ -16,11 +17,89 @@
     
     <script src='http://code.jquery.com/jquery-3.1.1.min.js'></script>
     <script src='js/bootstrap.js'></script>
-  <style>
-   
-
-  </style>
-
+ 
+    <style>
+        #event-input-img {
+          position: relative;
+          width: 94%;
+          cursor: pointer;
+          display: inline;
+          margin: 0;
+        }
+        .upload {
+          width: 94%;
+          opacity: 0;
+          position: relative;
+          display: inline;
+        }
+        .event-img-replace{
+          display: inline-block;
+          position: absolute;
+          width: 90%;
+          height: 20;
+          border-radius: 3px;
+          border-color: transparent;
+          background: green;
+          color: #fff;
+          cursor: pointer;
+        }
+        .event-check-img {
+          margin: 0px;
+        }
+       
+  
+            @media(max-width:1199px) {
+          /*해상도가 작을 때 드랍다운 아이템에 마우스를 올렸을때*/
+       
+          .event-img-replace{
+            width: 87%;
+          }
+      
+        }
+        @media(max-width:991px) {
+          /*해상도가 작을 때 드랍다운 아이템에 마우스를 올렸을때*/
+          .event-img-replace{
+            width: 100%;
+            height: 20;
+          }
+          .event-img-replace{
+            width: 84%;
+          }
+          #event-check-img{
+            height: 150px;
+          }
+       
+        }
+        @media(max-width:700px) {
+          /*세부적 해도되고 안해도됨*/
+        }
+        @media(max-width:480px) {
+          /*해상도가 작을 때 드랍다운 아이템에 마우스를 올렸을때*/
+          .event-img-replace {
+            width: 94%;
+            height: 20;
+          }
+        
+          #event-check-img{
+            width: 129%;
+            height: 150px;
+          }
+        }
+          @media(max-width:480px) {
+          /*해상도가 작을 때 드랍다운 아이템에 마우스를 올렸을때*/
+          .event-img-replace {
+            width: 94%;
+            height: 20;
+          }
+       
+          #event-check-img{
+            width: 129%;
+            height: 130px;
+          }
+  
+        }
+      
+    </style>
 
     <title>메인화면-관리자</title>
 </head>
@@ -117,17 +196,27 @@
                                     
                                     </div>
                                     <div class="form-group">
-                                    <label for="" class="col-sm-3 control-label">사진등록 </label>
-                                    <div class="col-sm-6">
-                                            <img class="card-img-top img-responsive center-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" alt="Card image cap" width=170 height=170>
-                                            <button class="btn btn-default center-block">사진등록</button>
+                                        <label for="" class="col-xs-3 control-label">사진등록 </label>
+                                        <div class="col-xs-1"></div>
+                                        <div class="col-xs-3">
+                                          <img id='event-check-img' src="http://proxyprivat.com/images/noimage.jpeg" alt="Card image cap" width=100% height=100>
+                                          <br>
+                                          <div class="">
+                                          </div>
+                                          <button class="event-img-replace">사진등록</button>
+                                          <input id='event-input-img' type="file" value="사진등록" class="upload" accept="image/gif, image/jpeg, image/png" name='truck-img'>
                                         </div>
-                                 
-                                </div>
+                          
+                                      </div>
                                     <br>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-default center-block">제출하기</button>
-                                </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                          <div class="col-sm-12 text-center">
+                                            <button class="btn btn-primary" type="submit">제출하기<i class="fa fa-check spaceLeft"></i></button>
+                                            <button class="btn btn-danger" type="submit">취소<i class="fa fa-times spaceLeft"></i></button>
+                                          </div>
+                                        </div>
+                                      </div>
                             </form>
                            
                         </div>
