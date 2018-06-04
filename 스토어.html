@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/store.css">
+  <link rel="stylesheet" href="css/all.css">
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <script src='http://code.jquery.com/jquery-3.1.1.min.js'></script>
   <script src='js/bootstrap.js'></script>
@@ -64,8 +65,6 @@
   </nav>
 
 
-
-
   <section>
     <div class="container">
       <div class="row" id='row_padding'>
@@ -90,61 +89,45 @@
       </div>
       <div class='row'>
         <ul class='store_ul'>
-          <li class='store_list'>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
-                </div>
-                <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
-                </div>
-                <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
-                </div>
-                <div class="col-xs-7">
-                  <p>주소</p>
-                  <p>평점</p>
-                  <p>평균금액</p>
-                </div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
-                </div>
-              </div>
-            </div>
-          </li>
+          <!--클릭리스너 만들기-->
+          <!--클릭리스너 만들기-->
           <li class='store_list'>
             <div class="col-sm-6 col-md-4 padding">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
+              <div class="thumbnail thumnail-botton">
+                <div class="col-xs-12">
+                    <br>
+                </div>
+
+                <div class="col-xs-8" align="left">
+                    <span class='truck_name'>점포명</span>
                 </div>
                 <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
+                  <!--고정값으로 할수있는 checkd찾기-->
+                  <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                  </label>
+                  <!--클릭이벤트제거-->
+                  <script>
+                    $("#myonoffswitch").on('click',function(e) {
+                    e.preventDefault();
+                    })
+                  </script>
+
+
+
+            </div>
+                    <!--고정값으로 할수있는 checkd찾기-->
+
                 </div>
                 <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
+                  <br>
+                  <img src="http://proxyprivat.com/images/noimage.jpeg" alt="" class='img_size'>
                 </div>
                 <div class="col-xs-7">
+                  <br>
                   <p>주소</p>
                   <p>평점</p>
                   <p>평균금액</p>
@@ -152,33 +135,53 @@
                 <div class='col-xs-4'></div>
                 <div class='col-xs-4'></div>
                 <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
+                <!--지우지마셈 꺠짐-->
+                <div>
+                  <a>&nbsp;</a>
                 </div>
               </div>
             </div>
           </li>
+
+
+          <!--클릭리스너 만들기-->
           <li class='store_list'>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
+            <div class="col-sm-6 col-md-4 padding">
+              <div class="thumbnail thumnail-botton">
+                <div class="col-xs-12">
+                    <br>
+                </div>
+
+                <div class="col-xs-8" align="left">
+                    <span class='truck_name'>점포명</span>
                 </div>
                 <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
+                  <!--고정값으로 할수있는 checkd찾기-->
+                  <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                  </label>
+                  <!--클릭이벤트제거-->
+                  <script>
+                    $("#myonoffswitch").on('click',function(e) {
+                    e.preventDefault();
+                    })
+                  </script>
+
+
+
+            </div>
+                    <!--고정값으로 할수있는 checkd찾기-->
+
                 </div>
                 <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
+                  <br>
+                  <img src="http://proxyprivat.com/images/noimage.jpeg" alt="" class='img_size'>
                 </div>
                 <div class="col-xs-7">
+                  <br>
                   <p>주소</p>
                   <p>평점</p>
                   <p>평균금액</p>
@@ -186,34 +189,53 @@
                 <div class='col-xs-4'></div>
                 <div class='col-xs-4'></div>
                 <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
+                <!--지우지마셈 꺠짐-->
+                <div>
+                  <a>&nbsp;</a>
                 </div>
               </div>
             </div>
           </li>
 
+
+          <!--클릭리스너 만들기-->
           <li class='store_list'>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
+            <div class="col-sm-6 col-md-4 padding">
+              <div class="thumbnail thumnail-botton">
+                <div class="col-xs-12">
+                    <br>
+                </div>
+
+                <div class="col-xs-8" align="left">
+                    <span class='truck_name'>점포명</span>
                 </div>
                 <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
+                  <!--고정값으로 할수있는 checkd찾기-->
+                  <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                  </label>
+                  <!--클릭이벤트제거-->
+                  <script>
+                    $("#myonoffswitch").on('click',function(e) {
+                    e.preventDefault();
+                    })
+                  </script>
+
+
+
+            </div>
+                    <!--고정값으로 할수있는 checkd찾기-->
+
                 </div>
                 <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
+                  <br>
+                  <img src="http://proxyprivat.com/images/noimage.jpeg" alt="" class='img_size'>
                 </div>
                 <div class="col-xs-7">
+                  <br>
                   <p>주소</p>
                   <p>평점</p>
                   <p>평균금액</p>
@@ -221,34 +243,49 @@
                 <div class='col-xs-4'></div>
                 <div class='col-xs-4'></div>
                 <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
+                <!--지우지마셈 꺠짐-->
+                <div>
+                  <a>&nbsp;</a>
                 </div>
               </div>
             </div>
           </li>
 
+
+          <!--클릭리스너 만들기-->
           <li class='store_list'>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
+            <div class="col-sm-6 col-md-4 padding">
+              <div class="thumbnail thumnail-botton">
+                <div class="col-xs-12">
+                    <br>
+                </div>
+
+                <div class="col-xs-8" align="left">
+                    <span class='truck_name'>점포명</span>
                 </div>
                 <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
+                  <!--고정값으로 할수있는 checkd찾기-->
+                  <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                  </label>
+                  <!--클릭이벤트제거-->
+
+
+
+
+            </div>
+                    <!--고정값으로 할수있는 checkd찾기-->
+
                 </div>
                 <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
+                  <br>
+                  <img src="http://proxyprivat.com/images/noimage.jpeg" alt="" class='img_size'>
                 </div>
                 <div class="col-xs-7">
+                  <br>
                   <p>주소</p>
                   <p>평점</p>
                   <p>평균금액</p>
@@ -256,155 +293,14 @@
                 <div class='col-xs-4'></div>
                 <div class='col-xs-4'></div>
                 <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
+                <!--지우지마셈 꺠짐-->
+                <div>
+                  <a>&nbsp;</a>
                 </div>
               </div>
             </div>
           </li>
 
-          <li class='store_list'>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
-                </div>
-                <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
-                </div>
-                <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
-                </div>
-                <div class="col-xs-7">
-                  <p>주소</p>
-                  <p>평점</p>
-                  <p>평균금액</p>
-                </div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class='store_list'>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
-                </div>
-                <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
-                </div>
-                <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
-                </div>
-                <div class="col-xs-7">
-                  <p>주소</p>
-                  <p>평점</p>
-                  <p>평균금액</p>
-                </div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class='store_list'>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
-                </div>
-                <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
-                </div>
-                <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
-                </div>
-                <div class="col-xs-7">
-                  <p>주소</p>
-                  <p>평점</p>
-                  <p>평균금액</p>
-                </div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class='store_list'>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <div class="col-xs-8">
-                  <span class='truck_name'>점포명</span>
-                </div>
-                <div class="col-xs-4">
-                  <p>on/off</p>
-                </div>
-                <div class="col-xs-8">
-                </div>
-                <div class="col-xs-4">
-                  <div class="btn-group btn-toggle">
-                    <button class="btn btn-xs btn-default">ON</button>
-                    <button class="btn btn-xs btn-success active">OFF</button>
-                  </div>
-                </div>
-                <div class="col-xs-5">
-                  <img src="images\food.png" alt="" class='img-responsive'>
-                </div>
-                <div class="col-xs-7">
-                  <p>주소</p>
-                  <p>평점</p>
-                  <p>평균금액</p>
-                </div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class='col-xs-4'></div>
-                <div class="caption" id='caption_center'>
-                  <p><a href="푸드트럭-메뉴.html" class="btn btn-primary" role="button">상세정보</a></p>
-                </div>
-              </div>
-            </div>
-          </li>
-
-
-        </ul>
       </div>
   </section>
 
