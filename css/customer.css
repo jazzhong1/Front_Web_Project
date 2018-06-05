@@ -1,6 +1,6 @@
 /*게시판 테이블 스타일*/
 
-.table {
+.table  {
   text-align: center;
   
   border-bottom: 2px solid rgba(134, 134, 133, 0.329);
@@ -11,7 +11,8 @@
   border-top: 3px solid rgba(114, 114, 111, 0.329);
   
   }
-  
+
+
   #tablehead {
   background-color:#b1ddabaf;
   color: white;
@@ -25,6 +26,8 @@
   text-align: center;
   
   }
+
+ 
   
 /*페이지 번호 정렬*/
 
