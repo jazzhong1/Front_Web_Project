@@ -13,7 +13,7 @@
   }
   
   #tablehead {
-  background-color:#dbc60470;
+  background-color:#b1ddabaf;
   color: white;
   }
   
@@ -35,4 +35,9 @@
 
 .pagination>li>a {
   float: none;
+}
+
+
+.panel{
+  margin-top: 70px;
 }

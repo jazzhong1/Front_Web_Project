@@ -63,4 +63,23 @@ section ul {
   .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
       right: 0px;
   }
+  
       /*스위치*/
+
+      @media(max-width:765px) {
+        .img_size{
+          width: 100px;
+          height: 100%;
+        }
+      }
+    
+    
+    
+      @media(max-width:480px) {
+        .img_size{
+          top: 0;
+          left: 0;
+          width: 70%;
+          height: 100%;
+        }
+      }
